@@ -1,0 +1,120 @@
+{
+  "name": "testing_tax_recording",
+  "description": "Tax county workflow for parcel 176-34-612-004",
+  "version": "1.0",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": {
+        "type": "navigation",
+        "description": null,
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://trweb.co.clark.nv.us/"
+      }
+    },
+    {
+      "step_number": 2,
+      "action": {
+        "type": "navigation",
+        "description": "I have evaluated step 1. I was expecting to see a web browser open to a default page like Google, but instead, I am on the Clark County Treasurer website. This is not what I wanted.\n\nI need to navigate to Wikipedia.",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://www.wikipedia.org/"
+      }
+    },
+    {
+      "step_number": 3,
+      "action": {
+        "type": "input",
+        "description": "I have evaluated step 2. I successfully navigated to the Wikipedia homepage.\nNow I need to search for \"modi\". I see a search bar in the middle of the page (y=640, x=470) and a search button next to it (y=640, x=635). I will type \"modi\" into the search bar.",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "element": {
+          "target_text": "I have evaluated step 2. I successfully navigated to the Wikipedia homepage.\nNow I need to search for \"modi\". I see a search bar in the middle of the page (y=640, x=470) and a search button next to it (y=640, x=635). I will type \"modi\" into the search bar.",
+          "selector_strategies": [
+            {
+              "type": "id",
+              "value": "searchInput",
+              "priority": 1,
+              "metadata": {
+                "tag": "input"
+              }
+            },
+            {
+              "type": "name",
+              "value": "search",
+              "priority": 2,
+              "metadata": {
+                "tag": "input"
+              }
+            },
+            {
+              "type": "css",
+              "value": "input#searchInput",
+              "priority": 3,
+              "metadata": {
+                "tag": "input",
+                "fallback": true
+              }
+            },
+            {
+              "type": "xpath",
+              "value": "//input[@id='searchInput']",
+              "priority": 4,
+              "metadata": {
+                "tag": "input",
+                "fallback": true
+              }
+            }
+          ],
+          "coordinates": {
+            "x": 632,
+            "y": 491,
+            "normalized_x": 462.0,
+            "normalized_y": 639.0,
+            "screen_width": 1366,
+            "screen_height": 768,
+            "bounding_box": {
+              "x": 450.40625,
+              "y": 469.671875,
+              "width": 394.1875,
+              "height": 44.0
+            }
+          },
+          "container_hint": null,
+          "position_hint": null,
+          "interaction_type": null,
+          "element_tag": "input",
+          "element_attributes": {
+            "id": "searchInput",
+            "name": "search",
+            "type": "search",
+            "size": "20",
+            "autofocus": "autofocus",
+            "accesskey": "F",
+            "dir": "auto",
+            "autocomplete": "off",
+            "style": "padding-right: 64px;"
+          },
+          "page_url": "https://en.wikipedia.org/wiki/Modi",
+          "page_title": null
+        },
+        "value": "modi",
+        "default_value": null,
+        "clear_before": true,
+        "press_enter": true
+      }
+    }
+  ],
+  "input_schema": [],
+  "default_wait_time": 0.5,
+  "workflow_analysis": "Step 2: I have evaluated step 1. I was expecting to see a web browser open to a default page like Google, but instead, I am on the Clark County Treasurer website. This is not what I wanted.\n\nI need to navigate to Wikipedia.\nStep 3: I have evaluated step 2. I successfully navigated to the Wikipedia homepage.\nNow I need to search for \"modi\". I see a search bar in the middle of the page (y=640, x=470) and a search button next to it (y=640, x=635). I will type \"modi\" into the search bar.",
+  "tags": []
+}

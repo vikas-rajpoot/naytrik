@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vyakur"
+version = "0.1.0"
+description = "Agent"
+readme = "README.md"
+requires-python = ">=3.14"
+license = {text = "MIT"}
+authors = [
+    {name = "Vikas Rajpoot", email = "vikasrajpoot0100@gmail.com"}
+]
+keywords = ["agent", "multi-agent", "automation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.14",
+]
+
+dependencies = [
+    "ollama==0.6.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pydantic==2.11.4",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# -v: verbose, -s: show print statements, --tb=short: shorter traceback
+addopts = "-v -s --tb=short"
+# Show local variables in tracebacks
+# showlocals = true
+
+[tool.mypy]
+python_version = "3.14"
+warn_return_any = false
+warn_unused_ignores = false
+disable_error_code = ["assignment", "return-value"]
+ignore_missing_imports = true
+
+[tool.pyright]
+pythonVersion = "3.14"
+reportGeneralTypeIssues = false
+reportReturnType = false
+reportAssignmentType = false
+

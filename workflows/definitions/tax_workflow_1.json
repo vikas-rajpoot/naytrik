@@ -1,0 +1,70 @@
+{
+  "name": "tax_workflow_1",
+  "description": "Tax county workflow for parcel 176-34-612-004",
+  "version": "1.0",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": {
+        "type": "navigation",
+        "description": null,
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://trweb.co.clark.nv.us/"
+      }
+    },
+    {
+      "step_number": 2,
+      "action": {
+        "type": "navigation",
+        "description": "I have evaluated step 1. I am currently on the Clark County Treasurer website. I need to go to Wikipedia. I will use the navigate action to go to Wikipedia.",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://www.wikipedia.org/"
+      }
+    },
+    {
+      "step_number": 3,
+      "action": {
+        "type": "input",
+        "description": "I have evaluated step 2. I am now on the Wikipedia homepage. I need to search for \"modi\". I see a search bar in the middle of the page. I will type \"modi\" into the search bar and press enter. The search bar is located around (y=640, x=470).",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "element": {
+          "target_text": "Element at (632, 491)",
+          "selector_strategies": [],
+          "coordinates": {
+            "x": 632,
+            "y": 491,
+            "normalized_x": 462.0,
+            "normalized_y": 639.0,
+            "screen_width": 1366,
+            "screen_height": 768,
+            "bounding_box": null
+          },
+          "container_hint": null,
+          "position_hint": null,
+          "interaction_type": null,
+          "element_tag": null,
+          "element_attributes": null,
+          "page_url": "https://en.wikipedia.org/wiki/Modi",
+          "page_title": null
+        },
+        "value": "modi",
+        "default_value": null,
+        "clear_before": true,
+        "press_enter": true
+      }
+    }
+  ],
+  "input_schema": [],
+  "default_wait_time": 0.5,
+  "workflow_analysis": "Step 2: I have evaluated step 1. I am currently on the Clark County Treasurer website. I need to go to Wikipedia. I will use the navigate action to go to Wikipedia.\nStep 3: I have evaluated step 2. I am now on the Wikipedia homepage. I need to search for \"modi\". I see a search bar in the middle of the page. I will type \"modi\" into the search bar and press enter. The search bar is located around (y=640, x=470).",
+  "tags": []
+}

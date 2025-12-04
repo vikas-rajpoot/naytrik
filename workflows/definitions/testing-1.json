@@ -1,0 +1,204 @@
+{
+  "name": "TESTING-1",
+  "description": "Tax county workflow for parcel 176-34-612-004",
+  "version": "1.0",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": {
+        "type": "navigation",
+        "description": null,
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://trweb.co.clark.nv.us/"
+      }
+    },
+    {
+      "step_number": 2,
+      "action": {
+        "type": "navigation",
+        "description": "I have evaluated the screenshot. It seems I have landed on the Clark County Treasurer's website, not Wikipedia. I need to navigate to Wikipedia first.",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://www.wikipedia.org/"
+      }
+    },
+    {
+      "step_number": 3,
+      "action": {
+        "type": "input",
+        "description": "I have evaluated the screenshot. I have successfully navigated to Wikipedia.\nNow I need to search for \"modi\". I can see a search bar in the middle of the page (around y=639, x=469). I will type \"modi\" into it.",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "element": {
+          "target_text": "I have evaluated the screenshot. I have successfully navigated to Wikipedia.\nNow I need to search for \"modi\". I can see a search bar in the middle of the page (around y=639, x=469). I will type \"modi\" into it.",
+          "selector_strategies": [
+            {
+              "type": "id",
+              "value": "searchInput",
+              "priority": 1,
+              "metadata": {
+                "tag": "input"
+              }
+            },
+            {
+              "type": "name",
+              "value": "search",
+              "priority": 2,
+              "metadata": {
+                "tag": "input"
+              }
+            },
+            {
+              "type": "css",
+              "value": "input#searchInput",
+              "priority": 3,
+              "metadata": {
+                "tag": "input",
+                "fallback": true
+              }
+            },
+            {
+              "type": "xpath",
+              "value": "//input[@id='searchInput']",
+              "priority": 4,
+              "metadata": {
+                "tag": "input",
+                "fallback": true
+              }
+            }
+          ],
+          "coordinates": {
+            "x": 640,
+            "y": 490,
+            "normalized_x": 468.0,
+            "normalized_y": 638.0,
+            "screen_width": 1366,
+            "screen_height": 768,
+            "bounding_box": {
+              "x": 450.40625,
+              "y": 469.671875,
+              "width": 394.1875,
+              "height": 44.0
+            }
+          },
+          "container_hint": null,
+          "position_hint": null,
+          "interaction_type": null,
+          "element_tag": "input",
+          "element_attributes": {
+            "id": "searchInput",
+            "name": "search",
+            "type": "search",
+            "size": "20",
+            "autofocus": "autofocus",
+            "accesskey": "F",
+            "dir": "auto",
+            "autocomplete": "off",
+            "style": "padding-right: 64px;"
+          },
+          "page_url": "https://www.wikipedia.org/",
+          "page_title": null
+        },
+        "value": "modi",
+        "default_value": null,
+        "clear_before": true,
+        "press_enter": false
+      }
+    },
+    {
+      "step_number": 4,
+      "action": {
+        "type": "click",
+        "description": "I have evaluated the screenshot. I successfully typed \"modi\" into the search bar.\nNow I need to click the search button (the magnifying glass icon) to perform the search. It is located to the right of the search bar (around y=639, x=638).",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "element": {
+          "target_text": "Search",
+          "selector_strategies": [
+            {
+              "type": "data_attr",
+              "value": "search-input-button",
+              "priority": 1,
+              "metadata": {
+                "tag": "i",
+                "attribute": "data-jsl10n"
+              }
+            },
+            {
+              "type": "text_exact",
+              "value": "Search",
+              "priority": 2,
+              "metadata": {
+                "tag": "i"
+              }
+            },
+            {
+              "type": "text_fuzzy",
+              "value": "Search",
+              "priority": 3,
+              "metadata": {
+                "threshold": 0.8,
+                "tag": "i"
+              }
+            },
+            {
+              "type": "css",
+              "value": "i[data-jsl10n=\"search-input-button\"]",
+              "priority": 4,
+              "metadata": {
+                "tag": "i",
+                "fallback": true
+              }
+            },
+            {
+              "type": "xpath",
+              "value": "//i[@data-jsl10n='search-input-button']",
+              "priority": 5,
+              "metadata": {
+                "tag": "i",
+                "fallback": true
+              }
+            }
+          ],
+          "coordinates": {
+            "x": 871,
+            "y": 490,
+            "normalized_x": 637.0,
+            "normalized_y": 638.0,
+            "screen_width": 1366,
+            "screen_height": 768,
+            "bounding_box": {
+              "x": 861.59375,
+              "y": 480.671875,
+              "width": 22.0,
+              "height": 22.0
+            }
+          },
+          "container_hint": null,
+          "position_hint": null,
+          "interaction_type": null,
+          "element_tag": "i",
+          "element_attributes": {
+            "class": "sprite svg-search-icon",
+            "data-jsl10n": "search-input-button"
+          },
+          "page_url": "https://en.wikipedia.org/wiki/Modi",
+          "page_title": null
+        }
+      }
+    }
+  ],
+  "input_schema": [],
+  "default_wait_time": 0.5,
+  "workflow_analysis": "Step 2: I have evaluated the screenshot. It seems I have landed on the Clark County Treasurer's website, not Wikipedia. I need to navigate to Wikipedia first.\nStep 3: I have evaluated the screenshot. I have successfully navigated to Wikipedia.\nNow I need to search for \"modi\". I can see a search bar in the middle of the page (around y=639, x=469). I will type \"modi\" into it.\nStep 4: I have evaluated the screenshot. I successfully typed \"modi\" into the search bar.\nNow I need to click the search button (the magnifying glass icon) to perform the search. It is located to the right of the search bar (around y=639, x=638).",
+  "tags": []
+}

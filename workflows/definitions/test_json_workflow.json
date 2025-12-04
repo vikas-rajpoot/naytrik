@@ -1,0 +1,23 @@
+{
+  "name": "test_json_workflow",
+  "description": "Testing JSON format",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": {
+        "type": "navigation",
+        "description": "Navigate to example.com",
+        "output": null,
+        "wait_time": null,
+        "verification_checks": null,
+        "expected_outcome": null,
+        "url": "https://example.com"
+      }
+    }
+  ],
+  "input_schema": [],
+  "default_wait_time": 0.5,
+  "workflow_analysis": null,
+  "tags": []
+}

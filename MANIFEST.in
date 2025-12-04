@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include ARCHITECTURE.md
+include QUICKSTART.md
+include CONTRIBUTING.md
+include PACKAGE_SUMMARY.md
+include PROJECT_COMPLETE.md
+include .env.example
+recursive-include src *.py
+recursive-include examples *.py *.md
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
