@@ -3,21 +3,37 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vyakur"
-version = "0.1.0"
-description = "Agent"
+name = "naytrik"
+version = "1.0.0"
+description = "AI-Powered Browser Automation - Record workflows with Gemini AI, replay infinitely without it"
 readme = "README.md"
-requires-python = ">=3.14"
-license = {text = "MIT"}
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
 authors = [
     {name = "Vikas Rajpoot", email = "vikasrajpoot0100@gmail.com"}
 ]
-keywords = ["agent", "multi-agent", "automation"]
+keywords = [
+    "browser-automation",
+    "ai-automation", 
+    "playwright",
+    "gemini-ai",
+    "workflow-automation",
+    "record-and-playback",
+    "web-automation",
+    "test-automation",
+    "rpa"
+]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 dependencies = [
@@ -45,14 +61,14 @@ addopts = "-v -s --tb=short"
 # showlocals = true
 
 [tool.mypy]
-python_version = "3.14"
+python_version = "3.10"
 warn_return_any = false
 warn_unused_ignores = false
 disable_error_code = ["assignment", "return-value"]
 ignore_missing_imports = true
 
 [tool.pyright]
-pythonVersion = "3.14"
+pythonVersion = "3.10"
 reportGeneralTypeIssues = false
 reportReturnType = false
 reportAssignmentType = false
